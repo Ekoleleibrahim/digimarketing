@@ -1,0 +1,130 @@
+*{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #f1f1f1; */
+    background-image: url(images/fond/font2.jpg);
+    background-size: cover;
+}
+h1,h2,h3,h4,h5{
+    text-transform: capitalize;
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+h3{
+    font-size: 1.875em;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+}
+header#entete-principal div a,#section-accueil div.element1 a{
+    display: inline-block;
+    background-color: rgb(227, 88, 28);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px orangered;
+}
+header#entete-principal div a:hover,#section-accueil div.element1 a:hover{
+    background-color: rgb(241, 69, 17);
+}
+.orange{
+    color: rgb(243, 102, 41);
+}
+
+
+header#entete-principal{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header#entete-principal ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+header#entete-principal ul li a:link,header#entete-principal ul li a:visited{
+    color: rgb(238, 101, 42);
+    font-weight: bold;
+}
+header#entete-principal ul li a:active,header#entete-principal ul li a:hover{
+    border-bottom: 3px solid rgb(243, 102, 41);
+}
+
+
+#section-accueil{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#section-accueil div{
+    width: 50%;
+}
+#section-accueil div.element1{
+    padding: 20px;
+    line-height: 40px;
+    text-align: justify;
+}
+#section-accueil div.element1 a{
+    margin-top: 20px;
+}
+#section-accueil div.element2 img{
+    border-radius: 5px;
+    height: auto;
+}
+
+
+.partenariat{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.partenariat div img{
+    width: 100%;
+}
+
+
+section#section-marketingexpress{
+    padding: 100px 50px;
+}
+section#section-marketingexpress header{
+    text-align: center;
+}
+section#section-marketingexpress .container-marketingexpress{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    line-height: 1.5625em;
+}
+section#section-marketingexpress .container-marketingexpress section{
+    text-align: center;
+    background-color: #84bdf3b5;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+section#section-marketingexpress .container-marketingexpress section img{
+    margin-bottom: 20px;
+}
+section#section-marketingexpress .container-marketingexpress section h5{
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:) {
+    
+}
