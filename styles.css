@@ -84,7 +84,7 @@ header#entete-principal ul li a:hover,header#entete-principal ul li a:active{
 }
 #section-accueil div.element1{
     padding: 20px;
-    line-height: 40px;
+    line-height: 25px;
     text-align: justify;
 }
 #section-accueil div.element1 a{
@@ -152,7 +152,7 @@ section#section-marketingexpress .container-marketingexpress section h5{
 
     /* PARTIE MARKETING EXPRESS */
     section#section-marketingexpress{
-        padding: 100px 30px;
+        padding: 50px 30px;
     }
     section#section-marketingexpress .container-marketingexpress{
         display: grid;
@@ -173,12 +173,22 @@ section#section-marketingexpress .container-marketingexpress section h5{
         justify-content: center;
         gap: 10px;
     }
+    #section-accueil div.element1{
+        padding: 0;
+    }
+    #section-accueil div.element2{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width:436px) {
+    /* PARTIE ACCUIEL */
+    #section-accueil{
+        padding: 20px;
+    }
     /* PARTIE MARKETING EXPRESS */
     section#section-marketingexpress{
-        padding: 100px 20px;
+        padding: 50px 20px;
     }
     section#section-marketingexpress .container-marketingexpress{
         display: grid;
