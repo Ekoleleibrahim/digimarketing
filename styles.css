@@ -105,6 +105,7 @@ header#entete-principal ul li a:hover,header#entete-principal ul li a:active{
 
 /* CONTENEUR PARTENARIAT */
 .partenariat{
+    padding: 10px;
     background-color: white;
     display: grid;
     grid-template-columns: repeat(4, 20%);
