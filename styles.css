@@ -12,9 +12,13 @@ body{
     background-image: url(images/fond/font2.jpg);
     background-size: cover;
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,p.premier-titre2,h5{
     text-transform: capitalize;
     font-family: 'Roboto', 'Montserrat', sans-serif;
+}
+p.premier-titre2{
+    font-size: 18px;
+    font-weight: bold;
 }
 h3{
     font-size: 1.875em;
@@ -87,6 +91,9 @@ header#entete-principal ul li a:hover,header#entete-principal ul li a:active{
     line-height: 25px;
     text-align: justify;
 }
+#section-accueil div.element1 h2{
+    margin-bottom: 20px;
+}
 #section-accueil div.element1 a{
     margin-top: 20px;
 }
@@ -99,8 +106,8 @@ header#entete-principal ul li a:hover,header#entete-principal ul li a:active{
 /* CONTENEUR PARTENARIAT */
 .partenariat{
     background-color: white;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
     justify-content: space-evenly;
     align-items: center;
 }
@@ -178,6 +185,15 @@ section#section-marketingexpress .container-marketingexpress section h5{
     }
     #section-accueil div.element2{
         margin-top: 20px;
+    }
+    /* CONTENEUR PARTENARIAT */
+    .partenariat{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 25%);
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px 0;
     }
 }
 
