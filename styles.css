@@ -20,6 +20,7 @@ h3{
     font-size: 1.875em;
     margin-bottom: 10px;
 }
+
 a{
     text-decoration: none;
     text-align: center;
@@ -41,32 +42,42 @@ header#entete-principal div a:hover,#section-accueil div.element1 a:hover{
     color: rgb(243, 102, 41);
 }
 
-
+/* HEADER */
 header#entete-principal{
-    padding: 10px 20px;
+    padding: 20px;
+    /* display: flex; 
+    justify-content: space-between;
+    align-items: center; */
+}
+header#entete-principal .flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+header#entete-principal nav{
+    margin-top: 15px;
+}
 header#entete-principal ul{
+    width: 70%;
+    margin: auto;
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 header#entete-principal ul li a:link,header#entete-principal ul li a:visited{
     color: rgb(238, 101, 42);
     font-weight: bold;
 }
-header#entete-principal ul li a:active,header#entete-principal ul li a:hover{
+header#entete-principal ul li a:hover,header#entete-principal ul li a:active{
     border-bottom: 3px solid rgb(243, 102, 41);
 }
 
-
+/* PARTIE ACCUIEL */
 #section-accueil{
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 #section-accueil div{
     width: 50%;
@@ -81,10 +92,11 @@ header#entete-principal ul li a:active,header#entete-principal ul li a:hover{
 }
 #section-accueil div.element2 img{
     border-radius: 5px;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
-
+/* CONTENEUR PARTENARIAT */
 .partenariat{
     background-color: white;
     display: flex;
@@ -96,7 +108,7 @@ header#entete-principal ul li a:active,header#entete-principal ul li a:hover{
     width: 100%;
 }
 
-
+/* PARTIE MARKETING EXPRESS */
 section#section-marketingexpress{
     padding: 100px 50px;
 }
@@ -104,10 +116,13 @@ section#section-marketingexpress header{
     text-align: center;
 }
 section#section-marketingexpress .container-marketingexpress{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; */
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: space-evenly;
     margin-top: 50px;
     line-height: 1.5625em;
 }
@@ -125,6 +140,52 @@ section#section-marketingexpress .container-marketingexpress section h5{
 }
 
 
-@media (max-width:) {
-    
+@media (max-width: 1000px) {
+    /* PARTIE ACCUIEL */
+    #section-accueil{
+        padding: 20px;
+        display: block;
+    }
+    #section-accueil div{
+        width: 100%;
+    }
+
+    /* PARTIE MARKETING EXPRESS */
+    section#section-marketingexpress{
+        padding: 100px 30px;
+    }
+    section#section-marketingexpress .container-marketingexpress{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        justify-content: space-evenly;
+        gap: 20px;
+        margin-top: 50px;
+        line-height: 1.5625em;
+    }
+}
+
+@media (max-width:440px) {
+    header#entete-principal ul{
+        width: 70%;
+        margin: auto;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width:436px) {
+    /* PARTIE MARKETING EXPRESS */
+    section#section-marketingexpress{
+        padding: 100px 20px;
+    }
+    section#section-marketingexpress .container-marketingexpress{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        gap: 20px;
+        margin-top: 50px;
+        line-height: 1.5625em;
+    }
 }
