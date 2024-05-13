@@ -370,6 +370,83 @@ section.Statistiques h3{
     border-radius: 3px;
 }
 
+/* Localisation */
+.location{
+    display: block;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 50%;
+    transition: transform 500ms ease-out;
+    animation-fill-mode: forwards;
+}
+.location:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 3px #000;
+}
+
+/* Footer du site */
+#section-footer{
+    padding: 30px 50px;
+    background-color: rgb(238, 90, 44);
+    color: #fff;
+    position: relative;
+    z-index: 30;
+}
+#section-footer  .container-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#section-footer  .container-footer h5{
+    margin-bottom: 10px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+#section-footer  .container-footer li{
+    margin-bottom: 10px;
+}
+#section-footer  .container-footer ul li a{
+    color: white;
+}
+#section-footer  .container-footer ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+#section-footer  .container-footer address{
+    font-style: normal;
+    line-height: 2;
+}
+a[href*="mailto"]:link{
+    color: white;
+    font-weight: bold;
+}
+a[href*="mailto"]:hover{
+    color: rgb(202, 202, 202);
+}
+#copyright{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.lien-vers-haut{
+    width: 50%;
+    margin: auto;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    color: #fff;
+}
+.lien-vers-haut:hover{
+    background-color: white;
+    color: #000;
+}
+
 
 
 /* LES MEDIAS QUERIES */
@@ -464,6 +541,23 @@ section.Statistiques h3{
         flex-direction: column;
         justify-content: center;
     } 
+}
+
+@media (max-width: 600px) {
+    /* Footer du site */
+    #section-footer{
+        padding: 30px;
+        background-color: rgb(238, 90, 44);
+        color: #fff;
+        position: relative;
+        z-index: 30;
+    }
+    #section-footer  .container-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 453px) {
